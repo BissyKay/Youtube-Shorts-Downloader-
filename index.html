@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShortSavr - YouTube Shorts Downloader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 ShortSavr</h1>
+    <p class="description">Download your favorite YouTube Shorts in one click. Just paste the link below:</p>
+    
+    <input type="text" id="shortsUrl" placeholder="Paste YouTube Shorts URL here..." />
+    <button onclick="downloadShort()">Download</button>
+    
+    <div id="preview"></div>
+  </div>
+
+  <footer>
+    &copy; <span id="year"></span> ShortSavr. Built with ❤️ for creators.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
